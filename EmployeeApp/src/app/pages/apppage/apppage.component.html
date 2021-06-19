@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="card">
+        <span class="emp-title mt-10"> Employee Management App </span>
+        </div>
+        <div class="card">
+            <p> Register The Employeee </p>
+             <div class="register">
+              <form  #user="ngForm" (ngSubmit)="saveEmpData(user.value)">
+                <div class="register-div">
+
+                  <label for="exampleFormControlInput1" class="inputlable">Employee Id </label>
+
+                  <input type="text" maxlength="10" ngModel name="empid" oninput="javascript:if(this.value.length>this.maxLength)this.value=this.value.slice(0,this.maxlength);" class="form-control" id="exampleFormControlInput1" placeholder="Emp38490" required>
+                  <label for="exampleFormControlInput1"> Name </label>
+
+                  <input type="text"  ngModel name="name"class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+                  <label for="exampleFormControlInput1">Occupation </label>
+
+                  <input type="text"  ngModel name="occu" #occupation class="form-control" id="exampleFormControlInput1" placeholder="Occupation" required>
+
+                </div>
+
+                <button  [disabled]="user.invalid" type="submit"  class="btn btn-success" id="register-btn"> Register</button>
+
+            </form>
+            </div>
+
+        </div>
+
+        <div class="card" *ngIf="check; else error">
+        <app-outpu [listOfEmpdata]="listOfEmpdata"></app-outpu>
+
+        </div>
+
+        <ng-template #error>
+          <div class="card">
+            <p>Sorry ! You don't have Any Data Right Now . </p>
+          </div>
+
+        </ng-template>
+</div>
+
+
+

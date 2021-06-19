@@ -1,0 +1,7 @@
+{
+  "/EmpAPI": {
+    "target": "http://sbsproject.kalkaprasad.com/index.php/",
+    "secure": false,
+    "logLevel":"debug"
+  }
+}

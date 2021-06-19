@@ -1,0 +1,22 @@
+
+
+<p> Employess Data </p>
+
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Serial Number</th>
+                <th scope="col">Employees ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Occupation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor=" let com of listOfEmpdata;index as i">
+                <th scope="row">{{i+1}}</th>
+                <td>{{com.enrolNo}}</td>
+                <td>{{com.name}}</td>
+                <td>{{com.occupation}}</td>
+              </tr>
+            </tbody>
+          </table>

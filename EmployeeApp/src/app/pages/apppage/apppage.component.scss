@@ -1,0 +1,39 @@
+$black: rgb(17, 83, 224);
+$addDataButtomColor:rgb(241, 118, 16);
+$radios:10%;
+.card{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.emp-title{
+    color:$black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.register{
+ display: flex;
+ flex-wrap: wrap;
+}
+.register-div{
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 50%;
+  margin: 10px;
+
+}
+#register-btn{
+ align-items: center;
+ display: flex;
+ background-color: $addDataButtomColor;
+ margin-left:50%;
+ border-radius: $radios;
+ margin-bottom: 25px;
+ justify-content: center;
+}
+.inputlable{
+ margin-left: 5px;
+ margin-right: 5px;
+}
